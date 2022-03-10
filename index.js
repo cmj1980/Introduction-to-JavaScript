@@ -299,7 +299,7 @@ if(number >= 90){
 }
 }
  console.log('task7', grade(94))
- 
+
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
@@ -315,10 +315,17 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+function vowelCounter(string) {
+ let vowelCount = 0
+ const vowels = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U']
+ for (let chair of string) {
+   if (vowels.includes(chair)) {
+     vowelCount++
+   }
+ }
+ return vowelCount
 }
-
+console.log()
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
